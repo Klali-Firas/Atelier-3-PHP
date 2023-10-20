@@ -19,11 +19,11 @@
                 <li class="nav-item ">
                     <a class="nav-link " href="ex2.php">Exercice 2</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link link-success" href="Accueil.php">Exercice 3</a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ex4.php">Exercice 4</a>
+                    <a class="nav-link" href="Accueil.php">Exercice 3</a>
+                </li>
+                <li class="nav-item  active">
+                    <a class="nav-link link-success" href="ex4.php">Exercice 4</a>
                 </li>
             </ul>
         </div>
@@ -34,8 +34,15 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
-<form action="Bienvenue.php" method="GET">
-    <label for="">Prenom : </label><input type="text" name="prenom"><br>
-    <label for="">Repitions : </label><input type="text" name="rep"><br>
-    <input type="submit" value="Envoyer" name="sub">
-</form>
+<fieldset>
+    <p>Cliquer sur l'un des boutons !</p>
+    <form action="vente.php" method="post">
+        <input type="submit" value="Vendre">
+    </form>
+    <form action="achat.php" method="post">
+        <input type="submit" value="Acheter">
+    </form>
+    <form action="location.php" method="post">
+        <input type="submit" value="Louer">
+    </form>
+</fieldset>
