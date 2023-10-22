@@ -1,7 +1,11 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <style>
+        input {
+            margin: 5px;
+        }
+    </style>
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
@@ -36,13 +40,23 @@
 
 <fieldset>
     <p>Cliquer sur l'un des boutons !</p>
-    <form action="vente.php" method="post">
-        <input type="submit" value="Vendre">
-    </form>
-    <form action="achat.php" method="post">
-        <input type="submit" value="Acheter">
-    </form>
-    <form action="location.php" method="post">
-        <input type="submit" value="Louer">
+    <form method="post">
+        <input type="submit" value="Vendre" name="vente">
+        <br>
+        <input type="submit" value="Acheter" name="acheter">
+        <br>
+        <input type="submit" value="Louer" name="louer">
     </form>
 </fieldset>
+
+<?php
+if (isset($_POST['vente'])) {
+    header('location:vente.php');
+}
+if (isset($_POST['acheter'])) {
+    header('location:achat.php');
+}
+if (isset($_POST['louer'])) {
+    header('location:location.php');
+}
+?>

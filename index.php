@@ -13,17 +13,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item ">
-                    <a class="nav-link " href="ex1.php">Exercice 1</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="ex1.php">Exercice 1</a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link " href="ex2.php">Exercice 2</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="ex2.php">Exercice 2</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Accueil.php">Exercice 3</a>
                 </li>
-                <li class="nav-item  active">
-                    <a class="nav-link link-success" href="ex4.php">Exercice 4</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="ex4.php">Exercice 4</a>
                 </li>
             </ul>
         </div>
@@ -32,6 +32,3 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-<p>Bienvenue dans la page Location immobilier !!</p>
